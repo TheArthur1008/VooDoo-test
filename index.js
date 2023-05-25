@@ -21,7 +21,7 @@ const generateItems = async () => {
   const data = await fetchData();
   data.products.forEach((item) => {
     const newProduct = document.createElement("div");
-    newProduct.innerHTML = `<div class='group mb-12 md:w-[350px] xl:w-[414px] relative lg:hover:cursor-pointer'>
+    newProduct.innerHTML = `<div class='group mb-12 md:w-[350px] relative lg:hover:cursor-pointer'>
                         <div class="mb-3 border border-black" id="card" >
                             <img
                                 src="${item.images[0].src}"
