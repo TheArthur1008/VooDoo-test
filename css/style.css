@@ -859,6 +859,10 @@ video {
   width: 100%;
 }
 
+.max-w-\[300px\] {
+  max-width: 300px;
+}
+
 .flex-shrink {
   flex-shrink: 1;
 }
@@ -1200,6 +1204,10 @@ video {
   grid-auto-flow: column dense;
 }
 
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -1398,6 +1406,19 @@ video {
 
 .gap-6 {
   gap: 1.5rem;
+}
+
+.gap-x-6 {
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+}
+
+.gap-y-12 {
+  row-gap: 3rem;
+}
+
+.gap-y-6 {
+  row-gap: 1.5rem;
 }
 
 .space-x-1 > :not([hidden]) ~ :not([hidden]) {
@@ -2626,12 +2647,24 @@ video {
 }
 
 @media (min-width: 400px) {
+  .sm\:max-w-full {
+    max-width: 100%;
+  }
+
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .sm\:underline {
     text-decoration-line: underline;
   }
 }
 
 @media (min-width: 768px) {
+  .md\:invisible {
+    visibility: hidden;
+  }
+
   .md\:block {
     display: block;
   }
@@ -2652,6 +2685,14 @@ video {
     height: 100%;
   }
 
+  .md\:h-\[300\] {
+    height: 300;
+  }
+
+  .md\:h-\[300px\] {
+    height: 300px;
+  }
+
   .md\:w-1\/5 {
     width: 20%;
   }
@@ -2668,6 +2709,34 @@ video {
     width: 425px;
   }
 
+  .md\:w-\[300px\] {
+    width: 300px;
+  }
+
+  .md\:w-\[250px\] {
+    width: 250px;
+  }
+
+  .md\:w-\[280px\] {
+    width: 280px;
+  }
+
+  .md\:w-\[330px\] {
+    width: 330px;
+  }
+
+  .md\:w-\[320px\] {
+    width: 320px;
+  }
+
+  .md\:w-\[305px\] {
+    width: 305px;
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -2682,6 +2751,10 @@ video {
 
   .md\:text-center {
     text-align: center;
+  }
+
+  .group:hover .md\:group-hover\:visible {
+    visibility: visible;
   }
 }
 
@@ -2720,6 +2793,10 @@ video {
 
   .lg\:w-\[528px\] {
     width: 528px;
+  }
+
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .lg\:items-start {
@@ -2763,6 +2840,11 @@ video {
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .lg\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .lg\:hover\:cursor-pointer:hover {

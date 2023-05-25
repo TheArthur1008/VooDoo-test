@@ -21,7 +21,7 @@ const generateItems = async () => {
   const data = await fetchData();
   data.products.forEach((item) => {
     const newProduct = document.createElement("div");
-    newProduct.innerHTML = `<div class='group mb-12 md:w-[350px] relative lg:hover:cursor-pointer'>
+    newProduct.innerHTML = `<div class='group mb-12 relative lg:hover:cursor-pointer'>
                         <div class="mb-3 border border-black" id="card" >
                             <img
                                 src="${item.images[0].src}"
@@ -41,7 +41,7 @@ const generateItems = async () => {
                             <span class="font-normal">${item.product_type}</span>
                             
                         </div>
-                        <button class="lg:invisible lg:group-hover:visible lg:group-focus:visible bg-black text-center text-white w-full rounded p-3 h-10">PICK-UP IN <span class="underline">2200</span></button>
+                        <button class="md:invisible md:group-hover:visible lg:group-focus:visible bg-black text-center text-white w-full rounded p-3 h-10">PICK-UP IN <span class="underline">2200</span></button>
                         
                         
                     </div>`;
