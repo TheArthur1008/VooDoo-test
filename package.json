@@ -1,0 +1,23 @@
+{
+  "name": "voodoo-test",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://TheArthur1008.github.io/VooDoo-test",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx tailwindcss -i ./css/input.css -o ./css/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheArthur1008/VooDoo-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheArthur1008/VooDoo-test/issues"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}
